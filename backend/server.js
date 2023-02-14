@@ -4,6 +4,7 @@ const app = fastify();
 const mongoose = require('mongoose');
 const taskRouts = require('./routes/taskRouts');
 
+
 app.register(require('@fastify/cors'), {
   origin: '*',
   methods: ['POST,GET,PUT,DELETE'],
